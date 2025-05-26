@@ -6,6 +6,7 @@ public class Otus : ModuleRules
 {
 	public Otus(ReadOnlyTargetRules Target) : base(Target)
 	{
+		PrivateDependencyModuleNames.AddRange(new string[] { "WeaponModule", "WeaponPlugin" });
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
 		PublicDependencyModuleNames.AddRange([

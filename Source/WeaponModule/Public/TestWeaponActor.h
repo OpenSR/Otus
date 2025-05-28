@@ -11,4 +11,7 @@ class WEAPONMODULE_API ATestWeaponActor : public AActor
 
 public:
 	ATestWeaponActor();
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Gun")
+	UStaticMeshComponent* GunMesh;
 };

@@ -11,4 +11,7 @@ class WEAPONPLUGIN_API APluginWeaponActor : public AActor
 
 public:
 	APluginWeaponActor();
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Gun")
+	UStaticMeshComponent* GunMesh;
 };
